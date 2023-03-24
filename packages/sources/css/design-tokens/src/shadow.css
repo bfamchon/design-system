@@ -1,0 +1,4 @@
+:root {
+  --shadow: 0 rem(4px) rem(4px) 0 var(--color_shadow);
+  --shadow-reversed: 0 rem(4px) rem(4px) 0 var(--color_shadow-reversed);
+}

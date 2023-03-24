@@ -1,0 +1,12 @@
+:root {
+  --color_primary: var(--color_blue);
+  --color_primary-reversed: var(--color_white);
+  --background-color_primary: var(--color_white);
+  --background-color_component-primary: var(--color_blue);
+  --background-color_component-primary-reversed: var(--color_white);
+  --background-color_component-primary-reversed_hover: var(--color_white);
+  --background-color_component-primary_hover: var(--color_darkblue);
+
+  --border-color_primary: var(--color_grey);
+  --border-color_primary-reversed: var(--color_blue);
+}

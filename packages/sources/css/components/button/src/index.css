@@ -1,0 +1,78 @@
+@import '@template/design-tokens';
+/* Default button */
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: none;
+  border-radius: 6px;
+  gap: 16px;
+  padding: 0px, 24px, 0px, 24px;
+  height: rem(50px);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.btn_variant--primary {
+  background-color: var(--background-color_component-primary);
+  color: var(--color_white);
+  fill: var(--color_white);
+}
+
+.btn_variant--primary:hover {
+  background-color: var(--background-color_component-primary_hover);
+  box-shadow: var(--shadow);
+}
+
+.btn_variant--primary-reversed {
+  border: 1px solid var(--border-color_primary);
+  background-color: var(--background-color_component-primary-reversed);
+  color: var(--color_primary);
+  fill: var(--color_primary);
+}
+
+.btn_variant--primary-reversed:hover {
+  border: 1px solid var(--border-color_primary-reversed);
+  background-color: var(--background-color_component-primary-reversed_hover);
+  box-shadow: var(--shadow-reversed);
+}
+
+.btn_variant--secondary {
+  background-color: darkviolet;
+  color: white;
+  fill: white;
+}
+
+.btn_variant--tertiary {
+  background-color: rgb(255, 213, 0);
+  color: black;
+  fill: white;
+}
+
+.btn_size--small {
+  font-size: rem(14px);
+  padding-block: rem(8px);
+  padding-inline: rem(16px);
+  block-size: rem(32px);
+  letter-spacing: rem(0.24px);
+}
+
+.btn_size--medium {
+  font-size: rem(16px);
+  padding-block: rem(14px);
+  padding-inline: rem(24px);
+  block-size: rem(48px);
+  letter-spacing: rem(0.27px);
+}
+
+.btn_size--large {
+  font-size: rem(20px);
+  padding-block: rem(20px);
+  padding-inline: rem(40px);
+  block-size: rem(64px);
+  letter-spacing: rem(0.34px);
+}

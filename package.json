@@ -1,4 +1,21 @@
 {
-  "name": "pictime-ds",
-  "packageManager": "yarn@4.0.0-rc.40"
+  "name": "template-ds",
+  "packageManager": "yarn@4.0.0-rc.40",
+  "workspaces": [
+    "packages/showcases/*",
+    "packages/sources/react",
+    "packages/sources/css/design-tokens",
+    "packages/sources/css/components/**/*"
+  ],
+  "devDependencies": {
+    "@nrwl/nx-cloud": "latest",
+    "nx": "^15.8.8"
+  },
+  "scripts": {
+    "w": "yarn workspace",
+    "start": "nx run-many --target=start --all --parallel",
+    "start:react": "nx run-many --target=start --projects=@template/showcase-react,@template/react --parallel",
+    "build-storybook": "nx run-many --target=build-storybook --all --parallel",
+    "build": "nx run-many --target=build --all --parallel"
+  }
 }

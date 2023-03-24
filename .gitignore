@@ -11,3 +11,11 @@
 
 #!.yarn/cache
 .pnp.*
+node_modules
+
+# Builds
+**/build
+**/dist
+**/docs
+**/coverage
+**/lib
