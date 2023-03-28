@@ -1,0 +1,28 @@
+stages:
+  - install
+  - build
+  - deploy
+
+install-dependencies:
+  stage: install
+  needs: []
+  script:
+    - yarn install --frozen-lockfile
+
+build:
+  stage: build
+  needs: [install-dependencies]
+  script:
+    - yarn build
+
+deploy-to-gl-pages:
+  stage: deploy
+  needs: [build]
+  script:
+    - echo "deploy to gitlab pages..."
+
+publish:
+  stage: deploy
+  needs: [build]
+  script:
+    - echo "publish components ..."
