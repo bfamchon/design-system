@@ -1,5 +1,11 @@
 {
   "name": "template-ds",
+  "private": true,
+  "license": "MIT",
+  "author": {
+    "email": "baptiste.famchon@pictime-groupe.com",
+    "name": "Baptiste FAMCHON"
+  },
   "packageManager": "yarn@4.0.0-rc.40",
   "workspaces": [
     "packages/showcases/*",
